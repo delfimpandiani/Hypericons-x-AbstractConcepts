@@ -2,3 +2,4 @@
 *.jpg
 /ARTstract_Dataset_v0.1/Local_ARTstract_construction/
 /Explainability_experiments/SD-AM/stable-diffusion/
+__pycache__
