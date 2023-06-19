@@ -1,3 +1,4 @@
 *.pth
 *.png
 *.jpg
+/ARTstract_Dataset_v0.1/Local_ARTstract_construction/
