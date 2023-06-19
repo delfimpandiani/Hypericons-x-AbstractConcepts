@@ -1,5 +1,7 @@
 *.pth
 *.jpg
 /ARTstract_Dataset_v0.1/Local_ARTstract_construction/
-/Explainability_experiments/SD-AM/stable-diffusion/
+/ARTstract_Dataset_v0.1/Local_ARTstract_v0.1/
+/Baselines_for_ACD/Local_best_models_paths/
+/Explainability_experiments/SD-AM/Local_stable-diffusion/
 __pycache__
