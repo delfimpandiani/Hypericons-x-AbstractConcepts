@@ -3,7 +3,7 @@
 /ARTstract_Dataset_v0.1/Local_ARTstract_construction/
 /ARTstract_Dataset_v0.1/Local_ARTstract_v0.1/
 /Baselines_for_ACD/Local_best_models_paths/
-/Baselines_for_ACD/Local_data/
+/Baselines_for_ACD/Local_structured_dataset/
 /Explainability_experiments/SD-AM/Local_stable-diffusion/
 **/Local_*/
 __pycache__
