@@ -6,7 +6,7 @@ from omnixai.data.image import Image
 from omnixai.explainers.vision.specific.gradcam.pytorch.gradcam import GradCAM
 
 # Load the trained model
-model_path = "baseline_detectors/models/finetuned_VGG_1000_epochs.pth"
+model_path = "../finetuned_VGG_1000_epochs.pth"
 model = torchvision.models.vgg16()
 num_classes = 8
 model.classifier[-1] = torch.nn.Linear(in_features=4096, out_features=num_classes)
@@ -22,7 +22,7 @@ transform = transforms.Compose([
 preprocess = lambda ims: torch.stack([transform(im.to_pil()) for im in ims])
 
 # Load unseen image and preprocess to tensor
-img = Image(PilImage.open('explainability_experiments/Grad-CAM/test_imgs/triumph.png').convert('RGB'))
+img = Image(PilImage.open('test_imgs/triumph.png').convert('RGB'))
 img_tensor = preprocess([img])
 
 # Define the GradCAM explainer

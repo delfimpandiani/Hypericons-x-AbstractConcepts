@@ -5,4 +5,5 @@
 /Baselines_for_ACD/Local_best_models_paths/
 /Baselines_for_ACD/Local_data/
 /Explainability_experiments/SD-AM/Local_stable-diffusion/
+/^Local_.*\//
 __pycache__
