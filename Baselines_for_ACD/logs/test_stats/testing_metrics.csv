@@ -1,0 +1,2 @@
+experiment_name,test_loss,test_accuracy,test_f1_score,cm_path
+overall_b_resnet50_3_epochs_pretrained_multi_class_augmented,1.869144320487976,0.29851190476190476,0.24622586849885333,../Local_logs/metrics_plots/confusion_matrices/overall_b_resnet50_3_epochs_pretrained_multi_class_augmented

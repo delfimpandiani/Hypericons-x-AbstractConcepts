@@ -1,0 +1,14 @@
+experiment_name,data_prep_type,augmented_data,base_model,epochs,optimizer,test_loss,test_accuracy,test_f1_score,metrics_img_path
+overall_b_resnet50_3_epochs_pretrained_multi_class_augmented,overall_b,True,resnet50,3,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.9283309493746077,0.27648809523809526,0.23211512380084987,../Local_logs/metrics_plots/train_history_plots/overall_b_resnet50_3_epochs_pretrained_multi_class_augmented.png

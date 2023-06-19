@@ -19,7 +19,16 @@ print(f"Using {device} device")
 class_names = ["comfort", "danger", "death", "excitement", "fitness", "freedom", "power", "safety"]
 
 def get_experiment_name (variables):
+    """
+    Get the experiment name based on the given variables.
 
+    Args:
+        variables (list): A list of variables containing data_prep_type, base_model_name, epochs, model_type,
+                          and augmented_data.
+
+    Returns:
+        str: The experiment name.
+    """
     data_prep_type, base_model_name, epochs, model_type, augmented_data = variables
     # specify experiment name
     augmented_variable = "augmented" if augmented_data else "not_augmented"
@@ -28,6 +37,16 @@ def get_experiment_name (variables):
     return experiment_name
 
 def train_model(variables):
+    """
+    Train the model based on the given variables.
+
+    Args:
+        variables (list): A list of variables containing data_prep_type, base_model_name, epochs, model_type,
+                          and augmented_data.
+
+    Returns:
+        tuple: A tuple containing the trained model and the path to the trained model file.
+    """
     data_prep_type, base_model_name, epochs, model_type, augmented_data = variables
     # specify experiment name
     experiment_name = get_experiment_name(variables)
@@ -42,6 +61,17 @@ def train_model(variables):
     return trained_model, trained_model_PATH
 
 def test_model(variables, class_names):
+    """
+    Test the model based on the given variables.
+
+    Args:
+        variables (list): A list of variables containing data_prep_type, base_model_name, epochs, model_type,
+                          and augmented_data.
+        class_names (list): A list of class names.
+
+    Returns:
+        None
+    """
     data_prep_type, base_model_name, epochs, model_type, augmented_data = variables
     # specify experiment name
     experiment_name = get_experiment_name(variables)
@@ -53,6 +83,18 @@ def test_model(variables, class_names):
     return
 
 def model_prediction(variables, image_path, base_model_name):
+    """
+    Perform model prediction on a new image based on the given variables.
+
+    Args:
+        variables (list): A list of variables containing data_prep_type, base_model_name, epochs, model_type,
+                          and augmented_data.
+        image_path (str): The path to the new image.
+        base_model_name (str): The name of the base model.
+
+    Returns:
+        None
+    """
     # specify experiment name
     experiment_name = get_experiment_name(variables)
     # load trained model
@@ -62,11 +104,9 @@ def model_prediction(variables, image_path, base_model_name):
     return
 
 dataset_path = "../Local_structured_dataset"
-variable = ["overall_b", "resnet50", 3, "pretrained_multi_class", True]
-# variable = ["overall_b", "vgg16", 5, "pretrained_multi_class", True]
-# variable = ["overall_b", "vit", 5, "pretrained_multi_class", True]
-# train_model(variable)
-# test_model(variable, class_names)
+variable = ["overall_b", "resnet50", 100, "pretrained_multi_class", True]
+train_model(variable)
+test_model(variable, class_names)
 image_path = "goya.jpg"
 model_prediction(variable, image_path, variable[1])
 
