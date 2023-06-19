@@ -1,0 +1,326 @@
+experiment_name,data_prep_type,augmented_data,base_model,epochs,optimizer,test_loss,test_accuracy,test_f1_score,metrics_img_path
+ub_vgg16_20_epochs_pretrained_multi_class_augmented,ub,True,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.6927293620857538,0.43586601307189543,0.3941536278776078,metric_plots/ub_vgg16_20_epochs_pretrained_multi_class_augmented.png
+ub_vgg16_20_epochs_pretrained_multi_class_not_augmented,ub,False,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.7193140562842875,0.43967864923747274,0.35827764048975214,metric_plots/ub_vgg16_20_epochs_pretrained_multi_class_not_augmented.png
+ub_resnet50_20_epochs_pretrained_multi_class_augmented,ub,True,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.6207415777094223,0.4562908496732026,0.4098511154055155,metric_plots/ub_resnet50_20_epochs_pretrained_multi_class_augmented.png
+ub_resnet50_20_epochs_pretrained_multi_class_not_augmented,ub,False,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.6443308732088875,0.4264025054466231,0.38413806263148537,metric_plots/ub_resnet50_20_epochs_pretrained_multi_class_not_augmented.png
+overall_b_vgg16_20_epochs_pretrained_multi_class_augmented,overall_b,True,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.069914698600769,0.2881944444444444,0.28591167082708435,metric_plots/overall_b_vgg16_20_epochs_pretrained_multi_class_augmented.png
+overall_b_vgg16_20_epochs_pretrained_multi_class_not_augmented,overall_b,False,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.022783864112127,0.2833333333333333,0.2686825942984031,metric_plots/overall_b_vgg16_20_epochs_pretrained_multi_class_not_augmented.png
+overall_b_resnet50_20_epochs_pretrained_multi_class_augmented,overall_b,True,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.9904477312451316,0.29970238095238094,0.27915048060793857,metric_plots/overall_b_resnet50_20_epochs_pretrained_multi_class_augmented.png
+overall_b_resnet50_20_epochs_pretrained_multi_class_not_augmented,overall_b,False,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.0384208531606767,0.27609126984126986,0.2571268381166518,metric_plots/overall_b_resnet50_20_epochs_pretrained_multi_class_not_augmented.png
+partition_b_vgg16_20_epochs_pretrained_multi_class_augmented,partition_b,True,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.010423019528389,0.28046875,0.2835313132329326,metric_plots/partition_b_vgg16_20_epochs_pretrained_multi_class_augmented.png
+partition_b_vgg16_20_epochs_pretrained_multi_class_not_augmented,partition_b,False,vgg16,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.1716786548495293,0.251953125,0.2614314504268307,metric_plots/partition_b_vgg16_20_epochs_pretrained_multi_class_not_augmented.png
+partition_b_resnet50_20_epochs_pretrained_multi_class_augmented,partition_b,True,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.0582567378878593,0.258203125,0.2751260641528879,metric_plots/partition_b_resnet50_20_epochs_pretrained_multi_class_augmented.png
+partition_b_resnet50_20_epochs_pretrained_multi_class_not_augmented,partition_b,False,resnet50,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.926132470369339,0.292578125,0.28560303835056516,metric_plots/partition_b_resnet50_20_epochs_pretrained_multi_class_not_augmented.png
+ub_vit_20_epochs_pretrained_multi_class_augmented,ub,True,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.8940247227163876,0.414964596949891,0.39610900131856236,metric_plots/ub_vit_20_epochs_pretrained_multi_class_augmented.png
+ub_vit_20_epochs_pretrained_multi_class_not_augmented,ub,False,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",1.940676824719298,0.3639025054466231,0.3778260744530887,metric_plots/ub_vit_20_epochs_pretrained_multi_class_not_augmented.png
+overall_b_vgg16_60_epochs_pretrained_multi_class_augmented,overall_b,True,vgg16,60,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.0801272221973965,0.2955357142857143,0.274241837581759,metric_plots/overall_b_vgg16_60_epochs_pretrained_multi_class_augmented.png
+overall_b_vit_20_epochs_pretrained_multi_class_augmented,overall_b,True,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.6599415767760504,0.2536706349206349,0.25210123918226895,metric_plots/overall_b_vit_20_epochs_pretrained_multi_class_augmented.png
+overall_b_vit_20_epochs_pretrained_multi_class_not_augmented,overall_b,False,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.699590251559303,0.2638888888888889,0.24917308123715684,metric_plots/overall_b_vit_20_epochs_pretrained_multi_class_not_augmented.png
+partition_b_vit_20_epochs_pretrained_multi_class_augmented,partition_b,True,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.679325893521309,0.273046875,0.2791247393843901,metric_plots/partition_b_vit_20_epochs_pretrained_multi_class_augmented.png
+partition_b_vit_20_epochs_pretrained_multi_class_not_augmented,partition_b,False,vit,20,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.7350443452596664,0.225,0.24465236911525973,metric_plots/partition_b_vit_20_epochs_pretrained_multi_class_not_augmented.png
+overall_b_vit_60_epochs_pretrained_multi_class_augmented,overall_b,True,vit,60,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.8868718033745173,0.2524801587301587,0.23748539698513435,metric_plots/overall_b_vit_60_epochs_pretrained_multi_class_augmented.png
+overall_b_vgg16_100_epochs_pretrained_multi_class_augmented,overall_b,True,vgg16,100,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.137727533067976,0.29871031746031745,0.29313666628267476,metric_plots/overall_b_vgg16_100_epochs_pretrained_multi_class_augmented.png
+overall_b_vgg16_1000_epochs_pretrained_multi_class_augmented,overall_b,True,vgg16,1000,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.142634471257528,0.2935515873015873,0.2775497753951701,metric_plots/overall_b_vgg16_1000_epochs_pretrained_multi_class_augmented.png
+overall_b_resnet50_100_epochs_pretrained_multi_class_augmented,overall_b,True,resnet50,100,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",2.203593367622012,0.26765873015873015,0.257878337160512,metric_plots/overall_b_resnet50_100_epochs_pretrained_multi_class_augmented.png
+overall_b_vit_100_epochs_pretrained_multi_class_augmented,overall_b,True,vit,100,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",3.3236076491219655,0.25376984126984126,0.24401848532407008,metric_plots/overall_b_vit_100_epochs_pretrained_multi_class_augmented.png
+overall_b_vit_1000_epochs_pretrained_multi_class_augmented,overall_b,True,vit,1000,"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)",4.421590816406977,0.24246031746031746,0.24215877051092385,metric_plots/overall_b_vit_1000_epochs_pretrained_multi_class_augmented.png
