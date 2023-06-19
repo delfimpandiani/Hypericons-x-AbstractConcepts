@@ -51,7 +51,7 @@ def document_experiment(data_prep_type, experiment_name, base_model_name, epochs
 ############## PRETRAINED MULTI-CLASS CLASSIFIER ################
 def multi_class_classifier(data_prep_type, train_loader, val_loader, test_loader, base_model_name, model, experiment_name, epochs, augmented_data):
     # Initialize a summary writer to log the parameters and metrics
-    writer = SummaryWriter('logs/' + experiment_name)
+    writer = SummaryWriter('Local_logs/' + experiment_name)
 
     # Freeze the model weights
     for param in model.parameters():
@@ -249,7 +249,7 @@ def multi_class_classifier(data_prep_type, train_loader, val_loader, test_loader
 ############## FINETUNED MULTI-CLASS CLASSIFIER ################
 def finetuned_multi_class_classifier(data_prep_type, train_loader, val_loader, test_loader, base_model_name, model, experiment_name, epochs, augmented_data):
     # Initialize a summary writer to log the parameters and metrics
-    writer = SummaryWriter('logs/' + experiment_name)
+    writer = SummaryWriter('Local_logs/' + experiment_name)
 
     # Freeze the model weights
     for param in model.parameters():
