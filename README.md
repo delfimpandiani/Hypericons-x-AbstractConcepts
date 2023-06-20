@@ -1,6 +1,6 @@
 # Hypericons x Abstract Concepts
 
-This repository contains the code used for the experiments presented in the paper: "Hypericons for Abstract Concepts: Non-traditional Approaches to Visual Explainability".
+This repository contains the code used for the experiments presented in the paper: ["Hypericons for Abstract Concepts: Non-traditional Approaches to Visual Explainability".](https://www.researchsquare.com/article/rs-2697848/v1)
 
 ## Contents
 The repository is organized into three main sections:
