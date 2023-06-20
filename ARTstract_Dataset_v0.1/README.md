@@ -7,19 +7,13 @@ The ARTstract dataset is a collection of images of artworks, primarily focused o
 The ARTstract dataset uses evoked clusters as a way to label the abstract concepts present in each image. Evoked clusters are groups of abstract concepts that often co-occur together in a given context. The idea of abstract concepts or symbols functioning in clusters of evocation was first introduced in [Hussain et al 2017], and has been used the scarce research there is on abstract concept detection with computer vision, such as [Ye et al 2018] and [Kalanat and Kovashka 2022]. It's important to note that currently the only available performances for the task of abstract concept detection use these clusters, that's why we have decided to use them to create this dataset. The original clusters were created by [Hussain et al 2017] by analyzing the co-occurrence of abstract concepts in advertisement images. The goal is to group similar abstract concepts together, in order to make it easier to detect and understand them in new images.
 
 We have reused those clusters and selected only 12 of them to begin populating the dataset. These 12 were selected by cross-referencing the cluster names (comfort, freedom, etc.) with cognitive science data about abstract concepts. We selecting the 12 (out of 55) clusters that were explicitly present in one of the latest cognitive science datasets [Harpaintner et al 2020], namely:
-
+- comfort: comfort, cozy, soft, softness
 - danger: danger, peril, risk
 - death: death, lethal, suicide, funeral
-- adventure: adventure, skiing, sport
+- fitness: exercise, fitness, running
+- freedom: america, freedom, liberty
 - power: force, power, powerful
 - safety: safety, saftey, security
-- excitement: excitement, flavors
-- fitness: exercise, fitness, running
-- protection: condom, penis, protection
-- freedom: america, freedom, liberty
-- comfort: comfort, cozy, soft, softness
-- desire: desire, want
-- hunger: desperation, hunger
 
 Each image in the ARTstract dataset is assigned one or more evoked clusters based on the abstract concepts present in the image. The evoked clusters are stored in the ARTstract_img_dict.json file, in the evoked_clusters field for each image. Each evoked cluster is represented by a number, and the corresponding cluster name, words, evocation strength and evocation evidence can be found in the same JSON file.
 
