@@ -1,3 +1,24 @@
+"""
+Script: create_tate_dataset.py
+Description: This script is used to download images from the Tate art collection dataset and save them to a local directory. It reads the information from a CSV file containing artwork data and uses the URLs provided to download the corresponding images. It also handles cases where the original URL is not accessible by generating alternative URLs based on a regular expression pattern.
+
+Dependencies:
+- os
+- csv
+- urllib.request
+- re
+
+Input:
+- tate_artwork_data.csv: A CSV file containing artwork data. The file should have two columns:
+    1. Acno: The unique identification number for each artwork.
+    2. URL_Suffix: The URL suffix for each artwork's image.
+
+Output:
+- Downloaded images: The script saves the downloaded images to the "../input_data/tate_dataset/" directory.
+
+Usage: Run the script to download the images from the Tate art collection dataset and save them to the local directory.
+
+"""
 import os
 import csv
 import urllib.request
@@ -11,7 +32,7 @@ def create_tate_dataset():
     destination_path = "../Local_input_data/tate_dataset/"
     failed = []
     succeed = []
-    with open("../input/tate_artwork_data.csv") as csvfile:
+    with open("../Local_input_data/tate_thumbnail_urls.csv.csv") as csvfile:
         reader = csv.reader(csvfile) 
         for i in range(1): # Skip the first row
             next(reader) 

@@ -143,7 +143,7 @@ def get_dataset_ioi(all_imgs_list, dataset_name):
                 dataset_ioi.append(img)
                 dataset_ioi_paths.append(img_path)
             elif dataset_name == "tate":
-                img_path = "../input/"+dataset_name+"_dataset/"+img.split("_")[1].lower()
+                img_path = "Local_input_data/"+dataset_name+"_dataset/"+img.split("_")[1].lower()
                 img_path = img_path + ".jpg"
                 #ioi: "tate_A00001"
                 #ioi_path: "../input/tate_dataset/A00001.jpg"
@@ -267,7 +267,7 @@ def resize_all_overall_images():
         if img.is_file():
             img_path = img.path
             img_name = img.name
-            resized_img_path = "../output/resized_dataset/" + img_name
+            resized_img_path = "../../Local_ARTstract_Dataset_v0/resized_dataset/" + img_name
             if os.path.exists(resized_img_path):
                 succeed.append(img_path)
             else:
@@ -331,8 +331,8 @@ def create_cluster_dataset_folders(lists_dict):
         None: The function doesn't return anything, it creates folders in the specified location
     """
     for cluster_name, img_list in lists_dict.items():
-        if not os.path.exists(f"../output/cluster_specific_datasets/{cluster_name}_dataset"):
-            os.makedirs(f"../output/cluster_specific_datasets/{cluster_name}_dataset")
+        if not os.path.exists(f"../../Local_ARTstract_Dataset_v0.0/cluster_specific_datasets/{cluster_name}_dataset"):
+            os.makedirs(f"../../Local_ARTstract_Dataset_v0.0/cluster_specific_datasets/{cluster_name}_dataset")
     return
 
 def mine_ioi_by_cluster(lists_dict):
