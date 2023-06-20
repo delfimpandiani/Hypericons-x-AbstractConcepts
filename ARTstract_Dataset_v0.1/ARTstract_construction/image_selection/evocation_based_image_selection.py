@@ -1,5 +1,5 @@
 """
-Script:evocation_mining.py
+Script:evocation_based_image_selection.py
 Author: Delfina Sol Martinez Pandiani
 Date: June 2023
 
@@ -216,8 +216,8 @@ def mine_cluster_evocation(dataset_name):
         and then creates dictionaries for image and cluster data. Then it calls several other functions to gather basic statistics,
         evocation dataframe, cooccurrence data, unique evoker images, and detailed statistics.
     """
-    cluster_data = get_cluster_data('../input_data/ACsof_interest/selected_clusters_v0.1.json')
-    image_data = get_image_data('../input_data/'+ dataset_name +'.json')
+    cluster_data = get_cluster_data('../Local_input_data/ACsof_interest/selected_clusters_v0.1.json')
+    image_data = get_image_data('../Local_input_data/'+ dataset_name +'.json')
     mismatches = get_mismatches("../input/mistmatches/mismatches_v0.1.json")
     ARTstract_img_dict = get_img_dict(dataset_name, image_data, cluster_data, mismatches)
     ARTstract_cluster_dict = get_cluster_dict(dataset_name, image_data, cluster_data, mismatches)
