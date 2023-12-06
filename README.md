@@ -1,6 +1,6 @@
 # Hypericons x Abstract Concepts
 
-This repository contains the code used for the experiments presented in the paper: ["Hypericons for Abstract Concepts: Non-traditional Approaches to Visual Explainability".](https://www.researchsquare.com/article/rs-2697848/v1)
+This repository contains the code used for the experiments presented in the paper: ["Hypericons for interpretability: decoding abstract concepts in visual data".](https://link.springer.com/article/10.1007/s42803-023-00077-8)
 
 ## Contents
 The repository is organized into three main sections:
@@ -21,15 +21,14 @@ If you are using the data or methods provided in this repository, we kindly requ
 
 
 
+
 ```
 
 @misc{martinez2023hypericons,
-title = {Hypericons for Abstract Concepts: Non-traditional Approaches to Visual Explainability},
+title = {Hypericons for interpretability: decoding abstract concepts in visual data},
 author = {Martinez Pandiani, Delfina Sol and Lazzari, Nicolas and van Erp, Marieke and Presutti, Valentina},
 year = {2023},
-note = {Preprint},
-howpublished = {\url{https://doi.org/10.21203/rs.3.rs-2697848/v1}},
-status = {Under Review},
+howpublished = {\url{https://doi.org/10.1007/s42803-023-00077-8}},
 journal = {International Journal of Digital Humanities},
 license = {CC BY 4.0}
 }
